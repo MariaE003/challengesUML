@@ -1,0 +1,14 @@
+1 - DDL =>pour creer et modifier la structure des tableau dans la base de donnee par contre DML cest pour l'insertion et modification des donnee dans une dable dans l abase de donnee 
+2 - le cle primaiare c'est identifient d'une table dans la base de donnee
+3 - en filtre les donner avec utilisation du close where avec une condition 
+
+1 - create table Produits(
+id int primary key auto_increment,
+nom varchar(100),
+prix int,
+stock int
+);
+
+2 - insert into Produit values('prod1',120,2),('prod2',100,1),('prod3',200,2);
+3 - update Produit set prix=prix+10%
+4- delete from Produit where stock=0;

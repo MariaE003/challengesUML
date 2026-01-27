@@ -1,10 +1,11 @@
-- Une classe représente un classe(entite) en  programme.
+1. Qu'est-ce qu'une classe dans un diagramme de classes ?
+Une classe représente un classe(entite) en  programme.
 Elle décrit ses données (attributs) et ses actions (méthodes).
 
-Pourquoi est-il problématique d’avoir des classes sans méthodes ?
-Parce qu’une classe sans méthodes ne fait rien.
+2. Pourquoi est-il problématique d'avoir des classes sans méthodes ?
+Parce qu'une classe sans méthodes il a aucun action.
 Elle sert juste à stocker des données, ce qui va contre la programmation orientée objet.
 
-Principe de responsabilité unique
+3. Principe de responsabilité unique
 Une classe doit avoir une seule responsabilité, donc une seule raison de changer.
 Une classe = un rôle précis, pas plusieurs.
