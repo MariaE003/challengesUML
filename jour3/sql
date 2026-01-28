@@ -1,0 +1,13 @@
+1 - count() permet de compter le nombre de rows dans une table
+    - sum() permet de calculer la somme des chiffre donne
+    - avg() permet de calculer la moyen 
+2 - count(*) = > permet de compter le nombre des ligne malgrer il contient des valeu null
+par contre
+count(collone) - > permet de compter les ligne qui en pas cette colonne vide
+
+3 - min et max permet 
+
+clallenges :
+1 - select count(*) from commandes
+2 - sellect avg(prix) from produits
+3 - select Max(montant) from commande
