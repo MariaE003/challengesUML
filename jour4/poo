@@ -1,0 +1,22 @@
+1 - une class c'est blueprint(plan) et le objet est une instance de cette classe 
+2 - $this signifier l'objet courant
+3 - le role du contructeur cest initialisation les attributs
+
+challenges 
+1- class Voiture{
+    private $marque; 
+    private $modele; 
+    private $vitesse=0;
+    public function __construct($marque,$modele){
+        $this->marque=marque;
+        $this->modele=modele;
+    }
+
+    public function accelerer(){
+        return $this->vitesse+1;
+    }
+
+}
+
+$obj=new Voiture('12','clio');
+echo $obj->accelerer();
