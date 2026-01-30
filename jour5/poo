@@ -1,0 +1,45 @@
+1 - lencapsulation c'est un concept dans poo permet de la controle du visibilite des attributs et des methode
+
+2 - une mathode/attribut public c'est un mathode/attribut accessible par tous
+private signifier que la mathode/attribut accissible just dans la meme class
+protected signifier que la mathode/attribut accissible dans la class et les class fille
+
+3 - ce nest pas toujour obligatoire mais il est best practice est plus securise par ce que il permet d'acceder et de modifier un donne dun attribut dune maniere indirect
+
+challenges
+1 - 
+class Voiture{
+    private $marque; 
+    private $modele; 
+    private $vitesse=0;
+    public function __construct($marque,$modele){
+        $this->marque=marque;
+        $this->modele=modele;
+    }
+    public function getVitesse(){
+        return $this->vitesse;
+    }
+    public function setVitesse($vitesse){
+        if($vitesse>0){
+        $this->vitesse=$vitesse;
+        }else{
+            return new Exception('la vit doit etre possitif');
+        }
+    }
+
+    public function accelerer(){
+        return $this->vitesse++;
+    }
+    
+
+}
+
+3 - class CompteBancaire{
+    private solde;
+    public function deposer($montant){
+        return $this->solde=$this->solde-$montant;
+    } 
+    public function retirer($montant){
+        return $this->solde=$this->solde+$montant;
+    } 
+}

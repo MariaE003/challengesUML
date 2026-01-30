@@ -13,7 +13,7 @@ challenges
     }
 
     public function accelerer(){
-        return $this->vitesse+1;
+        return $this->vitesse++;
     }
 
 }
