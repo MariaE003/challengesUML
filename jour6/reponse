@@ -1,0 +1,12 @@
+1 - la composition cest une relation forte par ce que la partie ne peut pas etre exister sans tout  (maison + chambre)
+l'agregation c'est une relation faible la partie peut exister sans tous ici en a une independance (equipe + joueur)
+
+2 - en lis cette cardinalite (1..* => un ou plusieur) le premier elements c'est le minimum et le dernier cest le maximum 
+3 - en utilise une class associative quand en a une relation many to many dans les deux cote dune relation entre deux class 
+?
+
+challenges
+1 - je choisi composition par ce que la vie du piece est depend de element pricipale maison (sans maison on peut pas trouver pieces)
+2- 
+3-
+dans ce cas la on na pas une dependence de vie entre les class un etudiant peut viver sans cours et linverce donc ici c'est une association simple
