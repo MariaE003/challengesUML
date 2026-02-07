@@ -1,0 +1,37 @@
+1 - est une class qui contient au moin une class abraite qui contient just une diffintion du class les nom des methode sans detail (peut contient des methode normale)
+2 -non on peut pas instancier un class abstraite par ce qui il contient just les nom des methode pas de detail
+3 - non par ce qu'il le principe de class abstraite /methode de la retulisabilite si en met une methode private a aucun role
+
+challenges
+
+1 -
+abstract class animal{
+    abstract public function crier();
+}
+2 -
+class Chien extends animal{
+    public funtion crier(){
+        echo 'hhhh';
+    }
+}
+class Chat extends animal{
+    public funtion crier(){
+        echo 'hiii';
+    }
+}
+3 -
+
+abstract class emp{
+    abstract publi function calculerS(); 
+}
+ class empFixe{
+    public function  calculerS(){
+        echo 'salaire'
+    }
+ }
+
+ class empCommision{
+    public function  calculerS(){
+        
+    }
+ }

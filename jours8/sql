@@ -1,0 +1,17 @@
+1 - en met dans les deux dune condition mais la diffirence cest en utilise aussi having dans la codition sur les focntion dagregation comme count sum ... 
+2 - select => from => where => group by => having => order by 
+3 - non en peut pas utilise alis dans where par ce que le where execute avant tle select(alias)
+oui pour order by par ce que order by execute apres le select (alis exist)
+
+challenges : 
+1 -
+select c.id,(p.prix*c.quantite) as  from 
+group by c.id 
+
+2 -
+select * from produit 
+order by prix desc
+3 -
+select client_id,count(*) from commandes
+group by commande having count(*)>2
+

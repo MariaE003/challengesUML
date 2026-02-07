@@ -1,0 +1,29 @@
+1 - lhiritage permet au class file dhirite les methode et les attribut du class parent
+2 - parent : signifier l'element parent
+self : signifier lelement courant
+3 - protected permet au class fille dacceder au attributs/methode du class mere  + accessible de la class mem
+
+
+challenges
+1 -  
+class Vehicule {
+public $marque;
+public function demarrer() {
+echo "Le véhicule démarre";
+}
+}
+
+class Voiture extends Vehicule {
+public $nombreDePortes;
+public function demarrer() {
+echo "La voiture démarre";
+}
+}
+
+3 -
+class Moto extends Vehicule {
+public function __construct($marque) {
+parent::__construct();
+$this->marque = $marque;
+}
+}

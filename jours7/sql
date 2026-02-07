@@ -1,0 +1,18 @@
+1 - inner join donne les enregistrements comun des deux table
+left join donne les enregistrement desdeux table plus les enregitrement du table a gauche 
+2 - quand en veux les enregistrement qui les enregistrement commun  desdeux table avce les enregistrement du table ene droite
+3 - oui en peut joindre plus de deux table dans une seul requete
+
+challenges
+1 -
+select c.*,cl.name from Commandes c 
+inner join Clients cl on c.id_client=cl.id
+2 -
+select c.*, c.montant from clients cl 
+left join commande c on c.id_client=cl.id 
+3 -  
+select c.*,cl.nom,p.nom, from commandes c
+inner join client cl on cl.id=c.id_client
+inner join lignes_commande l on l.id_c=c.id
+inner join produit p on p.id=l.id_p
+
