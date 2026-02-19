@@ -1,0 +1,24 @@
+1 - un attribuer staatique apartient a la class meme et en na pas besoin de creer un objet pour les utilise par contre attribut de linstance appartint de chaque objet et il est  utilisable apres instancier l'objet
+en accede au ces deuc : static avce class::$attribut et instance par $obj->attribut
+2 - le mot cle final siginifer que cette methode/class on peut hirite ou redifini par une autre class
+
+3 - surcharger cest le faite de utilise une methode  des paramtrer difirent mais la redifinition cest garder la meme signature mais changer le contenu de cette methode
+
+challenges
+1 - 
+class Counter{
+    public static $count=0;
+    public static function increment(){
+        self::$count++;
+    }
+}
+
+Counter::increment();
+echo Counter::count;
+
+
+2 - 
+ereur cest methode abstract dans un claas normal
+
+3- les methode doit etre toujour proteced ou bien public non private
++ en peut pas instance un class abtraite

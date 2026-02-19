@@ -1,0 +1,24 @@
+1 -
+je vai calculer le la somme des montant(chiffre d'affaire) par client
+et trier decroisan les client selon chiffre d'affaire et prend les 5 premier client   
+2 -
+en doit utilise ici le left join avce les table produit et commandes avce une condition where du id est null  
+3 -
+
+challenges 
+1 -
+select c.ville,sum(co.montant) as chiifre from client c
+inner join commande co on c.id=co.client_id
+group by c.ville
+order by chiifre desc
+limit 3 
+
+2 -
+select * from produit p left join commande c on p.id=c.id_produit
+where id_produit=null 
+
+3 -
+select c.nom,count(co.id) as nombre_co,sum(co.montant) from client c 
+join commande co on c.id=co.client_id
+group by c.id,c.nom
+having count(co.id)>1;

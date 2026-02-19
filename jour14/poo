@@ -1,0 +1,50 @@
+1 - le polymorphisme  c'est utilisation dune methode dans des class fille avec surchage ou redifinition (des comportemant deffirent)
+2 -
+un class abstrate peut contient des methode normal avec code ,aussi les attribut mais interface continet just la signature des methode et vous devez utilise obligement tous les methdes de cette interface
+
+
+3 - en peut utilise une interface quand en a besoin de implementer plusieur interfaces
+
+challenges 
+1 -
+interface Authentifiable{
+
+publc function  login();
+
+}
+
+class Utilisateur implements Authentifiable{
+    public function login(){
+        echo 'login';    
+    }
+}
+
+class Admin implements Authentifiable{
+    public function login(){
+        echo 'login1';    
+    }
+}
+2 - funtion connecter(Authentifiable $user){
+    $this->login();
+}
+
+3 -
+interface  Payable{
+public function payer()
+}
+
+class PayPalPayment implements Payble{
+    public function payer(){
+        echo 'payer';
+    }
+}
+class CardPayment implements Payble{
+    public function payer(){
+        echo 'payer1';
+    }
+}
+
+$paye=[new PayPalPayment,new CardPayment];
+foreach($paye as $p){
+    $p->payer();
+}

@@ -1,0 +1,39 @@
+1 -
+en utilise les sous requete quand on veut filtrer les donner selon un resultat dun calcule
+mais jointure cest pour combiner plusieur table pour laffichage des colonnes
+
+2 - la clause  CASE WHEN THEN c'est pour ajouter un  condition dans sql 
+ex:
+select  
+case 
+when age<18 then 'mineur' 
+else 'majeur'
+end 
+from student;
+3 - 
+une sous requete correlee c'est une requete qui depend de la requete principale
+
+challenges
+1 - 
+select   
+case 
+when prix<50 then 'Bon marché' 
+when age beteween 50 and 200 then 'Moyen de gamme'
+else 'haut de gamme'     
+end
+from produit 
+
+2 - select c.nom from client c 
+join commande co on c.id=co.id_client
+join produit p on p.id=co.id_produit
+where (
+    select max(p.prix) from produit  
+)
+
+3 - 
+select avg(total) from(
+    select  sum(montant) as total
+    from commandes
+    group by id_client
+    having sum(montant)>1000
+) 
